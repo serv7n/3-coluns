@@ -1,0 +1,100 @@
+* {
+  font-family: "Lexend Deca", sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.conteiner {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.orange {
+  background-color: #e28525;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.blue {
+  background-color: #016972;
+}
+
+.green {
+  background-color: #00403f;
+  border-radius: 0px 5px 5px 0px;
+}
+
+.box {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 4em 3em;
+}
+
+img {
+  margin: 10px;
+  margin-left: 0;
+}
+
+h1 {
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+p {
+  font-size: 17px;
+  color: white;
+  font-weight: 100;
+  margin-top: 0;
+}
+
+button {
+  position: absolute;
+  bottom: 20%;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border: 1px solid white;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.ore {
+  color: #e28525;
+}
+.blu {
+  color: #016972;
+}
+.gre {
+  color: #00403f;
+}
+
+button:hover {
+  background-color: transparent;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .conteiner {
+    grid-template-columns: 1fr;
+  }
+
+  .box {
+    height: 400px;
+    padding: 40px 4rem;
+    margin-bottom: 0px;
+  }
+  button {
+    padding: 0.5em;
+    position: relative;
+    bottom: 1em;
+  }
+}
